@@ -18,6 +18,95 @@ body {
   scroll-behavior: smooth;
 }
 
+.contatos {
+  width: 100%;
+  /* background-color: #fdf7f8; */
+  margin: 20px 0px 0px;
+  padding: 80px 0;
+}
+
+.contatos .indent {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 85%;
+  margin: 0 auto;
+  padding: 0 30px;
+}
+
+.contatos .subtitle {
+  margin: 0 0 15px;
+}
+
+.contatos .subtitle h2 {
+  font-size: 2.4rem;
+  color: #707070;
+}
+
+.container-contatos {
+  display: flex;
+  gap: 20px;
+}
+
+.card-contatos {
+  background-color: #ffffff;
+  padding: 25px;
+  box-shadow: 0px 0px 22px 1px rgba(0, 0, 0, 0.2);
+  width: 80%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  border-radius: 5px;
+  gap: 0.5rem;
+}
+
+.card-contatos .icone {
+  margin: 0 0 15px;
+}
+
+.card-contatos .icone img {
+  width: 39px;
+}
+
+.contatos .card-contatos span {
+  font-size: 1.3rem;
+  height: 30%;
+  color: #84868f;
+  margin: 0 0 7px;
+  font-weight: 600;
+  line-height: 1.2;
+}
+
+.card-contatos p {
+  margin: 0 0 70px;
+  height: 70px;
+  color: #707070;
+}
+
+.card-contatos .btn-contato {
+  text-decoration: none;
+  color: white;
+  background-color: #ffa23a;
+  padding: 7px 40px;
+  border-radius: 5px;
+  align-self: flex-start;
+  transition: 0.3s;
+}
+
+.card-contatos .btn-contato:hover {
+  transform: scale(1.1);
+  transition: 0.3s;
+}
+
+#backgroundimg{
+  width: 100%;
+  height: auto;
+}
+#contatos ul li{
+  font-size: 17px;
+  list-style: none;
+}
+
 header {
   background-color: #ffffff;
   position: fixed;
@@ -25,6 +114,10 @@ header {
   width: 100vw;
   z-index: 5;
   box-shadow: 0px 0px 28px 5px rgba(10, 3, 3, 0.15);
+}
+
+header .indent {
+  height: 100%;
 }
 
 header .indent-language {
@@ -71,6 +164,16 @@ header .navbar img {
   margin-bottom: 10px;
   height: 100%;
   width: 100%;
+}
+
+header .navbar a {
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+header .navbar a img {
+  height: 100%;
 }
 
 .hamburguer {
@@ -185,9 +288,11 @@ header .navbar .nav-ativo::after {
 .portfolio_ {
   display: flex;
   flex-direction: row-reverse;
+  justify-content: center;
+  align-items: center;
   gap: 20px;
-  width: 80%;
-  margin: 200px auto 50px;
+  width: 100%;
+  height: 1000px;
 }
 
 .portfolio-text {
@@ -324,7 +429,7 @@ header .navbar .nav-ativo::after {
 
 .presente-brasil .indent .presente-flex-container {
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
 }
 
 .presente-brasil .info-presente .title-presente {
@@ -339,7 +444,7 @@ header .navbar .nav-ativo::after {
 }
 
 .presente-brasil .imagem-presente img {
-  width: 100%;
+  width: 600px;
   object-fit: cover;
 }
 
@@ -350,6 +455,7 @@ header .navbar .nav-ativo::after {
   background-size: 80%;
   background-position: left bottom;
   background-repeat: no-repeat;
+  margin-bottom: 50px;
 }
 
 .quem-somos .indent {
@@ -654,7 +760,6 @@ header .navbar .nav-ativo::after {
   padding: 7px auto;
   position: relative;
   bottom: 200px;
-  left: 5px;
 }
 
 .img-fundo-pag {
@@ -1026,14 +1131,15 @@ header .navbar .nav-ativo::after {
   gap: 50px;
   width: 100%;
   margin: 0px auto;
-  color: #707070;
+  color: #585858;
   font-size: 1rem;
   line-height: 1.5;
   padding: 35px 150px;
-  background-color: #fdf7f8;
+  background-color: #ccc9c9;
   position: relative;
   left: 5px;
   margin-bottom: 70px;
+  border-radius: 5px;
 }
 
 .titulo-cabecalho-contatos {
@@ -1047,8 +1153,8 @@ header .navbar .nav-ativo::after {
 }
 
 .formulario-preencha {
-  font-size: 1rem;
-  color: #707070;
+  font-size: 18px;
+  color: #000000;
 }
 
 .obrigatorio {
@@ -1198,7 +1304,6 @@ input:focus {
   }
 
   header {
-    height: 15vh;
   }
 
   header .navbar {
@@ -1216,7 +1321,6 @@ input:focus {
   }
 
   header {
-    height: 12vh;
   }
 
   header .indent-language {
@@ -1332,11 +1436,12 @@ input:focus {
   }
 
   .presente-brasil .indent {
-    width: 90%;
+    width: 80%;
   }
 
   .imagem-presente {
     display: none;
+    border-radius: 10px;
   }
 
   .quem-somos {
@@ -1347,7 +1452,7 @@ input:focus {
   }
 
   .quem-somos .indent {
-    padding: 0 5%;
+    width: 80%;
   }
 
   .quem-somos .container {
@@ -1424,7 +1529,7 @@ input:focus {
   }
 
   .contatos .indent {
-    width: 100%;
+    width: 80%;
     margin: 0 auto;
   }
 
@@ -1439,7 +1544,7 @@ input:focus {
   }
 
   .quem-somos-pag .pag-indent {
-    width: 90%;
+    width: 85%;
   }
 
   .quem-somos-pag .quem-somos-paragraph {
@@ -1528,7 +1633,7 @@ input:focus {
   }
 
   .contatos-pag .pag-indent {
-    width: 90%;
+    width: 85%;
   }
 
   .container-contatos-pag {
@@ -1598,82 +1703,12 @@ input:focus {
     display: unset;
   }
 }
-.contatos {
-  width: 100%;
-  /* background-color: #fdf7f8; */
-  margin: 20px 0px 0px;
-  padding: 80px 0;
-}
-
-.contatos .indent {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  width: 85%;
-  margin: 0 auto;
-  padding: 0 30px;
-}
-
-.contatos .subtitle {
-  margin: 0 0 15px;
-}
-
-.contatos .subtitle h2 {
-  font-size: 2.4rem;
-  color: #707070;
-}
-
-.container-contatos {
-  display: flex;
-  gap: 20px;
-}
-
-.card-contatos {
-  background-color: #ffffff;
-  padding: 25px;
-  box-shadow: 0px 0px 22px 1px rgba(0, 0, 0, 0.2);
-  width: 80%;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-evenly;
-  border-radius: 5px;
-  gap: 0.5rem;
-}
-
-.card-contatos .icone {
-  margin: 0 0 15px;
-}
-
-.card-contatos .icone img {
-  width: 39px;
-}
-
-.contatos .card-contatos span {
-  font-size: 1.3rem;
-  height: 30%;
-  color: #84868f;
-  margin: 0 0 7px;
-  font-weight: 600;
-  line-height: 1.2;
-}
-
-.card-contatos p {
-  margin: 0 0 70px;
-  height: 70px;
-  color: #707070;
-}
-
-.card-contatos .btn-contato {
-  text-decoration: none;
-  color: white;
-  background-color: #ffa23a;
-  padding: 7px 40px;
-  border-radius: 5px;
-  align-self: flex-start;
-  transition: 0.3s;
-}
-
-.card-contatos .btn-contato:hover {
-  transform: scale(1.1);
-  transition: 0.3s;
+@media (max-width: 1400px) {
+  .presente-brasil .indent .presente-flex-container {
+    display: flex;
+    flex-direction: column;
+  }
+  .imagem-presente img{
+    width: 85%;
+  }
 }
