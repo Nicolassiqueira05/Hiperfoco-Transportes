@@ -1734,12 +1734,115 @@ input:focus {
   z-index: -1;
 }
 
-.rastreio-container{
-  width: 80vw;
-  height: 400px;
-  background-color: rgb(183, 189, 183);
+.rastreamento-container {
+  position: relative;
+  width: 100%;
+  height: 90vh;
+  overflow: hidden;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+}
+
+.rastreamento-container::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: url("../images/background.png") no-repeat center;
+  background-size: cover;
+  filter: blur(8px);
+  transform: scale(1.1); /* evita bordas cortadas */
+  z-index: -1;
+}
+:root {
+    --correios-azul: #00416b;
+    --correios-amarelo: #ffe600;
+    --cinza-claro: #f4f4f4;
+    --texto: #333;
+}
+
+.rastreamento-container {
+    padding: 60px 20px;
+    display: flex;
+    justify-content: center;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.rastreamento-content {
+    background: #fff;
+    padding: 40px;
+    border-radius: 8px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+    max-width: 600px;
+    width: 100%;
+    text-align: center;
+}
+
+.rastreamento-header h2 {
+    color: var(--correios-azul);
+    font-size: 28px;
+    margin-bottom: 10px;
+}
+
+.rastreamento-header p {
+    color: #666;
+    margin-bottom: 30px;
+}
+
+.rastreamento-form .input-group {
+    display: flex;
+    gap: 0;
+    border: 2px solid var(--correios-azul);
+    border-radius: 5px;
+    overflow: hidden;
+}
+
+.rastreamento-form input {
+    flex: 1;
+    padding: 15px;
+    border: none;
+    outline: none;
+    font-size: 16px;
+}
+
+.btn-rastrear {
+    background-color: var(--correios-azul);
+    color: white;
+    border: none;
+    padding: 0 30px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background 0.3s;
+    text-transform: uppercase;
+}
+
+.btn-rastrear:hover {
+    background-color: #002e4d;
+}
+
+.rastreamento-form small {
+    display: block;
+    margin-top: 15px;
+    color: #888;
+    font-style: italic;
+}
+
+/* Responsividade */
+@media (max-width: 480px) {
+    .rastreamento-form .input-group {
+        flex-direction: column;
+        border: none;
+    }
+    
+    .rastreamento-form input {
+        border: 2px solid var(--correios-azul);
+        border-radius: 5px;
+        margin-bottom: 10px;
+    }
+    
+    .btn-rastrear {
+        padding: 15px;
+        border-radius: 5px;
+    }
 }

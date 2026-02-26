@@ -67,13 +67,24 @@
             </div>
         </header>
         <main>
-            <section class="rastreio">
-                <h1>Rastreio</h1>
-                <div class="rastreio-container">
-                    <p>Caso tenha um código de rastreio válido digite abaixo e rastrearemos sua entrega</p>
-                    <input type="text" name="" id="" placeholder="Código">
+            <section class="rastreamento-container">
+            <div class="rastreamento-content">
+                <div class="rastreamento-header">
+                    <h2>Acompanhe sua entrega</h2>
+                    <p>Insira o código de rastreamento para saber onde está sua entrega.</p>
                 </div>
-            </section>
+                
+                <form class="rastreamento-form" action="#" method="GET">
+                    <div class="input-group">
+                        <input type="text" id="codigo" placeholder="Ex: 17341945623870" required>
+                        <button type="submit" class="btn-rastrear">
+                            <i class="fas fa-search"></i> Rastrear
+                        </button>
+                    </div>
+            <small>Você pode encontrar o código no seu e-mail de confirmação.</small>
+        </form>
+    </div>
+</section>
         </main>
 
         <footer>
