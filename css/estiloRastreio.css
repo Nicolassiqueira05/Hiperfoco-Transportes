@@ -1293,6 +1293,12 @@ input:focus {
     display: flex;
     gap: 1rem
   }
+  .rastreamento-container{
+    height: 70vh;
+  }
+  main{
+    margin: 0px;
+  }
 
 }
 
@@ -1351,6 +1357,7 @@ input:focus {
 
   .hamburguer {
     display: block;
+    margin: 0px 15px;
   }
 
   header .navbar .nav-list {
@@ -1377,7 +1384,7 @@ input:focus {
   }
 
   .navbar.active .nav-list {
-    transform: translateX(-20%);
+    transform: translateX(5%);
     transition: all 0.3s ease-in-out;
   }
 
@@ -1395,7 +1402,7 @@ input:focus {
   }
 
   main {
-    margin-top: 100px;
+    margin-top: 0px;
   }
 
   .navbar .nav-list {

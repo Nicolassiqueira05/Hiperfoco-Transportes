@@ -10,7 +10,6 @@ section {
     scroll-margin-top: 80px;
     
 }
-
 body {
   /* height: 100vw; */
   display: flex;
@@ -117,7 +116,6 @@ header {
 }
 
 header .indent {
-  height: 100%;
 }
 
 header .indent-language {
@@ -144,7 +142,7 @@ header .language-container {
   display: flex;
   justify-content: flex-end;
   width: 80%;
-  padding: 10px 150px;
+  padding: 5px 150px;
 }
 
 header .indent {
@@ -152,7 +150,8 @@ header .indent {
 }
 
 header .navbar {
-  margin: 10px 0px 0px;
+  margin: 5px 0px 5px;
+  height: 60px;
   display: flex;
   align-items: center;
   justify-content: space-evenly;
@@ -1121,7 +1120,7 @@ header .navbar .nav-ativo::after {
 }
 
 .container-contatos-pag #container {
-  width: 70%;
+  width: 100%;
 }
 
 .container-contatos-pag {
@@ -1135,7 +1134,7 @@ header .navbar .nav-ativo::after {
   font-size: 1rem;
   line-height: 1.5;
   padding: 35px 150px;
-  background-color: #ccc9c9;
+  background-color: #e6e6e6;
   position: relative;
   left: 5px;
   margin-bottom: 70px;
@@ -1354,6 +1353,7 @@ input:focus {
 
   .hamburguer {
     display: block;
+    margin: 0px 15px;
   }
 
   header .navbar .nav-list {
@@ -1380,7 +1380,7 @@ input:focus {
   }
 
   .navbar.active .nav-list {
-    transform: translateX(-20%);
+    transform: translateX(5%);
     transition: all 0.3s ease-in-out;
   }
 
@@ -1398,7 +1398,7 @@ input:focus {
   }
 
   main {
-    margin-top: 100px;
+    margin-top: 60px;
   }
 
   .navbar .nav-list {
