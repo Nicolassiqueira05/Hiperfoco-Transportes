@@ -144,7 +144,7 @@ header .language-container {
   display: flex;
   justify-content: flex-end;
   width: 80%;
-  padding: 10px 150px;
+  padding: 5px 150px;
 }
 
 header .indent {
@@ -152,7 +152,8 @@ header .indent {
 }
 
 header .navbar {
-  margin: 10px 0px 0px;
+  margin: 5px 0px 5px;
+  height: 60px;
   display: flex;
   align-items: center;
   justify-content: space-evenly;

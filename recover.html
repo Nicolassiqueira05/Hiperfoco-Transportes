@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Titillium+Web:wght@200;300;400;600;700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="css/login.css">
+    <title>Login - Hiperfoco Transportes</title>
+</head>
+
+<body>
+
+<header>
+    <div class="indent">
+        <div class="header-container">
+            <nav class="navbar">
+                <a href="index.html">
+                    <img src="images/logo-header.png">
+                </a>
+
+                <button class="hamburguer"></button>
+
+                <ul class="nav-list">
+                    <li>
+                        <a href="index.html#portfolio" class="nav-link">Início</a>
+                    </li>
+                    <li>
+                        <a href="index.html#about" class="nav-link">Sobre Nós</a>
+                    </li>
+                    <li>
+                        <a href="index.html#where" class="nav-link">Onde atuamos</a>
+                    </li>
+                    <li>
+                        <a href="index.html#contact" class="nav-link">Contato</a>
+                    </li>
+                    <li>
+                        <a href="rastreio.html" class="nav-link">Rastreio</a>
+                    </li>
+                    <li>
+                        <a href="login.html" class="nav-link nav-ativo">Login</a>
+                    </li>
+                    <li>
+                        <a href="login.html" class="nav-link nav-ativo">Área do funcionário</a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </div>
+</header>
+
+<main class="login-main">
+    <div class="login-container">
+        <h2 class="login-title">Área de Acesso</h2>
+
+        <form class="login-form">
+            <div class="input-group">
+                <label>Email</label>
+                <input type="email" placeholder="Digite seu email" required>
+            </div>
+
+            <div class="input-group">
+                <label>Confirmação Email</label>
+                <input type="password" placeholder="Digite seu email novamente" required>
+            </div>
+
+            <button type="submit" class="btn-login" onclick="window.alert('caso tenha cadastro será enviado uma link para recuperação no seu email')">Entrar</button>
+
+            <p class="login-extra">
+                Tem o seu acesso <a href="/login.html">Fazer Login</a>
+            </p>
+        </form>
+    </div>
+</main>
+
+<footer>
+    <div class="footer">
+        <div class="container-footer">
+            <div class="info-footer">
+                <div class="text-info">
+                    <p>
+                        Avenida Conselheiro Carrão <br>
+                        Chacara Califórnia, São Paulo <br>
+                        SP, 03402000
+                    </p>
+                </div>
+            </div>
+            <div class="logo-footer-container">
+                <div class="logo-footer">
+                    <img src="images/logo-footer.png">
+                </div>
+            </div>
+        </div>
+    </div>
+</footer>
+
+</body>
+</html>
