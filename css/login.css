@@ -156,7 +156,7 @@ header .navbar .nav-ativo::after {
 /* ================= LOGIN ================= */
 
 .login-main {
-  min-height: 100vh;
+  height: 90vh;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -257,22 +257,39 @@ header .navbar .nav-ativo::after {
 
 .footer {
   background-color: #26213f;
-  margin-top: auto;
 }
 
-.container-footer {
-  padding: 15px 30px;
+.footer .container-footer {
+  padding: 35px 30px 15px;
   display: flex;
-  justify-content: space-between;
-  align-items: center;
+  justify-content: space-around;
 }
 
-.text-info {
+.footer .container-footer .info-footer {
+  display: flex;
+}
+
+.footer .container-footer .info-footer p {
+  margin-bottom: 15px;
+}
+
+.footer .container-footer .logo-footer-container {
+  display: flex;
+}
+
+.footer .text-info {
   color: white;
 }
 
-.logo-footer img {
-  height: 50px;
+.footer .text-info img {
+  width: 39px;
+}
+
+.footer .copyright {
+  font-size: 0.9rem;
+  background-color: #ae0931;
+  color: white;
+  text-align: center;
 }
 
 /* ================= RESPONSIVO ================= */
